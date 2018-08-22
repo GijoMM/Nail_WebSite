@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Price</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Price - Nail Salon SKY</title>
+  <link rel="stylesheet" href="css/styles.css">
   <style>
-    *{
-      box-sizing: border-box;
-      box-sizing: content-box;
-    }
-    body{
-      margin: 0;
-    }
     .topimage{
       background-image: url(image/top.jpg);
       height: 360px;
@@ -77,29 +74,22 @@
       background-color: #387077;
       color: white;
     }
-    a.footer{
-      text-decoration: none;
-      float: left;
-      text-align: left;
-      padding: 20px;
-      color: black;
-      cursor: pointer;
-      display: inline-block;
-    }
-    footer{
-      height: 100px;
-      background-color: #dddddd;
-    }
-    li.footer{
-      list-style-type: none;
-    }
   </style>
 </head>
-<body class="margin"">
-<div id="page">
-  <header class="topimage">
-  </header>
-</div>
+<body class="margin">
+<header class="header">
+  <img src="img/logo.svg" alt="Nail Salon SKY" class="header__logo">
+  <nav class="globalNav">
+    <ul>
+      <li><a href="">HOME</a></li>
+      <li><a href="">Nail Style</a></li>
+      <li><a href="">Price</a></li>
+      <li><a href="">Access</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="topimage"></div>
 <div class="section">
   <table>
     <div>
@@ -183,22 +173,25 @@
     <a href="pricepage.html" class="button button1">Reservation</a>
   </div>
 </div>
-<footer>
-  <ul>
-    <li class="footer">
-      <a href="home.html" class="footer">Home</a>
-    </li>
-  </ul>
-  <ul>
-    <li class="footer">
-      <a href="home.html" class="footer">Home</a>
-    </li>
-  </ul>
-  <ul>
-    <li class="footer">
-      <a href="home.html" class="footer">Home</a>
-    </li>
-  </ul>
+<footer class="footer">
+  <img src="img/logo.svg" alt="Nail Salon SKY" class="footer__logo">
+  <div class="footer__content">
+    <nav class="footerNav">
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">Nail Style</a></li>
+        <li><a href="">Price</a></li>
+        <li><a href="">Access</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Hot Papper</a></li>
+      </ul>
+    </nav>
+    <ul class="footerLink">
+      <li><a href=""><img src="img/instagram-brands.svg" alt="Instagram" class="icon"></a></li>
+      <li><a href=""><img src="img/facebook-square-brands.svg" alt="Facebook" class="icon"></a></li>
+    </ul>
+  </div>
+  <p class="copyright">Copyright &copy; Nail Salon SKY</p>
 </footer>
 </body>
 </html>
