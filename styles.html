@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Styles - Nail Salon SKY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> -->
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            list-style-type: none;
+        }
+        body{
+            font-family: sans-serif;
+            width: 100%;
+            height:100%;
+            color:#444;
+        }
+        .staff__name{
+            margin: 20px 0;
+        }
+        ul{
+            padding: 0;
+        }
+        header{
+            background: cadetblue;
+            height: 4rem;
+            line-height: 4rem;
+            text-align: center;
+        }
+        main{
+            margin: auto;
+            width: 980px;
+        }
+        #heading-img{
+            height: 400px;
+            background-color: chocolate;
+            /* background-image: url() */
+            line-height: 400px;
+            text-align: center;
+            color:white;
+        }
+        .content__wrap{
+            width: 980px;
+            margin: 100px 0;
+        }
+        .content{
+            display: flex;
+        }
+        .staff__img__wrap{
+            width: 25%;
+            margin-right: 5%;
+        }
+
+        .staff__img{
+            width: 100%;
+            height:100%;
+            border-radius: 50%;
+        }
+
+        .staff__styles__wrap{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width:70%;
+            justify-content: center;
+            /* margin: 0 0 0 17px; */
+        }
+        .staff__styles__heading, .staff__styles__img{
+            /* margin-left: 25px; */
+        }
+
+        .staff__styles__heading{
+            display: flex;
+            align-items: center;
+            margin: 0 0 16px;
+        }
+
+        .staff__styles__heading__icon{
+            width: 160px;
+            background-color: #ccc;
+            padding: 1.2rem;
+            text-align: center;
+            font-weight: bold;
+            margin-left: 17px;
+        }
+        .staff__styles__heading__description{
+            width: 75%;
+            margin-left: 17px;
+        }
+
+        .staff__styles__img__list{
+            -webkit-display: flex;
+            -moz-display: flex;
+            -ms-display: flex;
+            -o-display: flex;
+            display: flex;
+            flex-direction: row;
+            /* margin-left: 25px; */
+            align-items: flex-end;
+        }
+        .staff__styles__img__block{
+            width: 90%;
+            margin-left: 10%;
+        }
+        footer{
+            background: #888;
+            height: 6rem;
+            line-height: 6rem;
+            color:white;
+            text-align: center;
+        }
+        .reservation{
+            text-align: center;
+            margin:2rem;
+        }
+        .reservation__btn{
+            display: block;
+            width: 220px;
+            margin: 1rem auto 5rem;
+            padding: 1.2rem 0;
+            background: #aaa;
+            color:#fff;
+            border-radius: 20px;
+        }
+        @media only screen and (max-width:768px){
+            main{
+                width:100%;
+            }
+            .content__wrap{
+                width:100%;
+            }
+            .content{
+                -webkit-display: flex;
+                -moz-display: flex;
+                -ms-display: flex;
+                -o-display: flex;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 5% 5%;
+            }
+            .staff__name{
+                text-align: center;
+                margin-bottom: 0;
+            }
+            .staff__img__wrap{
+                width:90%;
+                margin: 0;
+                padding:10% 2rem;
+                align-items: center;
+            }
+            .staff__styles__wrap{
+                width:100%;
+            }
+            .staff__styles__heading{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1.5rem;
+            }
+            .staff__styles__heading__icon{
+                width:100%;
+                margin:0 1rem 1rem;
+            }
+            .staff__styles__heading__description{
+                width: 100%;
+                margin: 0;
+            }
+            .staff__styles__img__list{
+                flex-wrap: wrap;
+            }
+            .staff__styles__img__list__dt{
+                width:49%;
+            }
+            .staff__styles__img__list__dt.left{
+                margin:0 .45rem .45rem 0;
+            }
+            .staff__styles__img__list__dt.right{
+                margin:0 0 .45rem;
+            }
+            .staff__styles__img__block{
+                margin:0;
+                width:100%;
+            }
+        }
+        @media only screen and (min-width:320px){
+            .staff__styles__img__list__dt{
+                width: 48.7%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>(header)</header>
+    <div id="heading-img">
+        <h2>Nail Styles</h2>
+    </div>
+    <main>
+        <div class="content__wrap">
+            <h3 class="staff__name">
+                Mai<!-- Staff Name -->
+            </h3>
+            <div class="content">
+                <div class="staff__img__wrap">
+                    <img class="staff__img" src="img/sample.png" />
+                </div>
+                <div class="staff__styles__wrap">
+                    <div class="staff__styles__heading">
+                        <div class="staff__styles__heading__icon">
+                            Design
+                        </div>
+                        <div class="staff__styles__heading__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </div>
+                    </div>
+                    <div class="staff__styles__img">
+                        <ul class="staff__styles__img__list">
+                            <li class="staff__styles__img__list__dt left"><img class="staff__styles__img__block left" src="img/sample.png" /></li>
+                            <li class="staff__styles__img__list__dt right"><img class="staff__styles__img__block" src="img/sample.png" /></li>
+                            <li class="staff__styles__img__list__dt left"><img class="staff__styles__img__block" src="img/sample.png" /></li>
+                            <li class="staff__styles__img__list__dt right"><img class="staff__styles__img__block" src="img/sample.png" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__wrap">
+            <h3 class="staff__name">
+                Hatsumi<!-- Staff Name -->
+            </h3>
+            <div class="content">
+                <div class="staff__img__wrap">
+                    <img class="staff__img" src="img/sample.png" />
+                </div>
+                <div class="staff__styles__wrap">
+                    <div class="staff__styles__heading">
+                        <div class="staff__styles__heading__icon">
+                            Design
+                        </div>
+                        <div class="staff__styles__heading__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </div>
+                    </div>
+                    <div class="staff__styles__img">
+                        <ul class="staff__styles__img__list">
+                            <li class="staff__styles__img__list__dt left"><img class="staff__styles__img__block left" src="img/sample.png" /></li>
+                            <li class="staff__styles__img__list__dt right"><img class="staff__styles__img__block" src="img/sample.png" /></li>
+                            <li class="staff__styles__img__list__dt left"><img class="staff__styles__img__block" src="img/sample.png" /></li>
+                            <li class="staff__styles__img__list__dt right"><img class="staff__styles__img__block" src="img/sample.png" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__wrap">
+            <h3 class="staff__name">
+                (Staff Name)<!-- Staff Name -->
+            </h3>
+            <div class="content">
+                <div class="staff__img__wrap">
+                    <img class="staff__img" src="img/sample.png" />
+                </div>
+                <div class="staff__styles__wrap">
+                    <div class="staff__styles__heading">
+                        <div class="staff__styles__heading__icon">
+                            Design
+                        </div>
+                        <div class="staff__styles__heading__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </div>
+                    </div>
+                    <div class="staff__styles__img">
+                        <ul class="staff__styles__img__list">
+                            <li class="staff__styles__img__list__dt left"><img class="staff__styles__img__block left" src="img/sample.png" /></li>
+                            <li class="staff__styles__img__list__dt right"><img class="staff__styles__img__block" src="img/sample.png" /></li>
+                            <li class="staff__styles__img__list__dt left"><img class="staff__styles__img__block" src="img/sample.png" /></li>
+                            <li class="staff__styles__img__list__dt right"><img class="staff__styles__img__block" src="img/sample.png" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reservation">
+            <h2>Reservation</h2>
+            <a class="reservation__btn">Reserve<br>(jump to coupon website)</a>
+        </div>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>
