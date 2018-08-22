@@ -1,81 +1,63 @@
 <!DOCTYPE html>
 
 <html>
-        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
-        <head>
-               <style>
-             div#form{
-                 font-size: 60px;
-                 width:500px;
-                 margin:0 auto;
-                  /* padding: 20% 30%; */
-              }
-              .name{
-                  padding: 13px 0 0px 30px;
-                  height: 20px;
-                  margin: 0 0 30px 50px;
-              }
-              .email{
-                padding: 10px;
-                  font-size:15px;
-                  margin: 0 0 30px 63px;
-              }
-              .title{
-                padding: 10px;
-                  font-size:15px;
-                  margin: 0 0 30px 86px;
-              }
-              .message{
-                padding: 10px;
-                  font-size:15px;
-                  margin: 0 0 30px 47px;
-                  height: 100px;
-                  width: 400px;
-              }
-              .submit{
-                widows: 200px;
-                height:150px;
-                font-size:40px;
-                background-color: rgb(141, 140, 140);
-                
-              }
-                label#name{
-                font-size: 30px;
-              }
-                label#email{
-                font-size: 30px;
-              }
-                label#title{
-                font-size: 30px;
-              }
-                label#message{
-                font-size: 30px;
-              }
-              .btn-wrap{
-                margin: auto;
-                font-size: 200px;
-              }
-         
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Contact - Nail Salon SKY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
+</head>
+<body>
+<header class="header">
+  <img src="img/logo.svg" alt="Nail Salon SKY" class="header__logo">
+  <nav class="globalNav">
+    <ul>
+      <li><a href="">HOME</a></li>
+      <li><a href="">Nail Style</a></li>
+      <li><a href="">Price</a></li>
+      <li><a href="">Access</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<div id="heading-img">
+  <h2>Contact</h2>
+</div>
+<main>
+  <div class="content__wrap">
+    <div id="contact">
+      <form>
+        <label id="name"> Name:</label><input type="text" name="input1" class="name"></br>
+        <label id="email">Email:</label><input type="text" name="input2" class="email"></br>
+        <label id="title">Title:</label><input type="text" name="input3" class="title"></br>
+        <label id="message">Message:</label><input type="text" name="input4" class="message"></br>
 
+        <input type="submit" value="submit" class="submit">
 
-
-
-              </style>
-               </head>
-          <body>
-            <div id="form">
-                <form>
-                    <label id="name"> Name:</label><input type="text" name="input1" class="name"></br> 
-                    <label id="email">Email:</label><input type="text" name="input2" class="email"></br>
-                    <label id="title">Title:</label><input type="text" name="input3" class="title"></br>
-                    <label id="message">Message:</label><input type="text" name="input4" class="message"></br>
-                  
-                        <input type="submit" value="submit" class="submit" >
-                   
-                </form>
-            </div>
-          </body>
-
-
-          
+      </form>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <img src="img/logo.svg" alt="Nail Salon SKY" class="footer__logo">
+  <div class="footer__content">
+    <nav class="footerNav">
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">Nail Style</a></li>
+        <li><a href="">Price</a></li>
+        <li><a href="">Access</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Hot Papper</a></li>
+      </ul>
+    </nav>
+    <ul class="footerLink">
+      <li><a href=""><img src="img/instagram-brands.svg" alt="Instagram" class="icon"></a></li>
+      <li><a href=""><img src="img/facebook-square-brands.svg" alt="Facebook" class="icon"></a></li>
+    </ul>
+  </div>
+  <p class="copyright">Copyright &copy; Nail Salon SKY</p>
+</footer>
+</body>
 </html>

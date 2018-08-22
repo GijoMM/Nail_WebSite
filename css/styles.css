@@ -461,3 +461,59 @@ main{
     width: 48.7%;
   }
 }
+
+/* Contact */
+div#contact {
+  font-size: 60px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+#contact .name {
+  padding: 13px 0 0px 30px;
+  height: 20px;
+  margin: 0 0 30px 50px;
+}
+
+#contact .email {
+  padding: 10px;
+  font-size: 15px;
+  margin: 0 0 30px 63px;
+}
+
+#contact .title {
+  padding: 10px;
+  font-size: 15px;
+  margin: 0 0 30px 86px;
+}
+
+#contact .message {
+  padding: 10px;
+  font-size: 15px;
+  margin: 0 0 30px 47px;
+  height: 100px;
+  width: 400px;
+}
+
+#contact .submit {
+  width: 200px;
+  height: 150px;
+  font-size: 40px;
+  background-color: rgb(141, 140, 140);
+}
+
+#contact label#name {
+  font-size: 30px;
+}
+
+#contact label#email {
+  font-size: 30px;
+}
+
+#contact label#title {
+  font-size: 30px;
+}
+
+#contact label#message {
+  font-size: 30px;
+}
