@@ -7,7 +7,7 @@
 }
 * {
   box-sizing: border-box;
-  /*transition: .2s ease;*/
+  transition: .2s ease;
   margin: 0;
   list-style-type: none;
 }
@@ -341,6 +341,10 @@ h3, h4, h5 {
 	margin:20px 0 0;
 	font-size:2.5rem;
 }
+main{
+  margin: auto;
+  width: 980px;
+}
 #heading-img{
   height: 400px;
   margin: 52px 0 0;
@@ -376,10 +380,8 @@ h3, h4, h5 {
 }
 
 .content__wrap{
-  width: 90%;
-  width: calc(100vw - 40px);
-  max-width: 980px;
-  margin: 100px auto;
+  width: 980px;
+  margin: 100px 0;
 }
 .content{
   -webkit-display: flex;
@@ -466,6 +468,12 @@ h3, h4, h5 {
   margin-left: 10%;
 }
 @media only screen and (max-width:768px){
+  main{
+    width:100%;
+  }
+  .content__wrap{
+    width:100%;
+  }
   .content{
     -webkit-display: flex;
     -moz-display: flex;
@@ -533,8 +541,10 @@ h3, h4, h5 {
 }
 
 /* Contact */
-#contact {
+div#contact {
   font-size: 60px;
+  width:980px;
+  margin:0 auto;
 }
 
 #contact .name {
@@ -608,6 +618,12 @@ h3, h4, h5 {
 }
 
 @media only screen and (max-width: 768px) {
+  #contact {
+    font-size: 60px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   #contact .name {
     padding: 0px 0rem;
     margin: 0;
@@ -635,75 +651,6 @@ h3, h4, h5 {
     width: 100%;
     height: 100px;
   }
-}
-
-/* Price */
-.price-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.price-table td.text {
-  border: 5px solid white;
-  text-align: center;
-  padding: 15px;
-  background-color: #dddddd;
-  width: 30%;
-}
-
-.price-table td {
-  border: 5px solid white;
-  text-align: center;
-  padding: 15px;
-  background-color: #f1f1f1;
-  width: 70%
-}
-
-.price-table th {
-  text-align: left;
-  padding-top: 50px;
-}
-
-.h2pricepage {
-  font-family: 'Merienda', cursive;
-  text-align: left;
-  margin-top: 30px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-}
-@media only screen and (max-width:768px){
-  .h2pricepage{
-    text-align: center;
-  }
-}
-
-/* Access */
-.googlemap-wrap {
-  margin: 30px auto;
-  text-align: center;
-  max-width: 600px;
-  width: 90%;
-}
-
-.googlemap-wrap iframe {
-  width: 100%;
-  height: 450px;
-}
-
-.access-table {
-  margin: 0 auto;
-  max-width: 600px;
-  width: 90%;
-  border: 1px solid black;
-}
-
-.access-table td {
-  font-size: 10px;
-  margin: 20px;
-}
-
-.td-small {
-  padding-left: 50px;
 }
 
 /* Reservation Section */
