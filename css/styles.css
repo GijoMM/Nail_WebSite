@@ -96,23 +96,24 @@ h3, h4, h5 {
   color: #004c84;
 }
 .footer {
-  background-color: #fefefe;
+  background-color: #00bcca;
   padding: 4rem 20px 1rem;
 }
 .footer__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 17px;
 }
 .footerNav li {
   display: inline-block;
   margin-right: 1em;
 }
 .footerNav li a {
-  color: #343434;
+  color: #fefefe;
 }
 .footerNav li a:hover {
-  color: #004c84;
+  color: #004c85;
 }
 .footerLink li {
   display: inline-block;
@@ -122,7 +123,7 @@ h3, h4, h5 {
   color: #343434;
 }
 .footerLink a:hover {
-  color: #004c84;
+  color: #004c85;
 }
 .footer__logo {
   width: 80px;
@@ -131,6 +132,7 @@ h3, h4, h5 {
 .copyright {
   font-size: 12px;
   text-align: center;
+  color: #fefefe;
 }
 
 .hero {
