@@ -81,7 +81,12 @@ h3, h4, h5 {
   background-color: #fff;
   z-index: 10;
 }
-.header__logo {
+.header__logo{
+  width: auto;
+  height:32px;
+}
+
+.header__logo__img {
   width: auto;
   height: 32px;
 }
@@ -283,10 +288,11 @@ h3, h4, h5 {
   margin-right: 1em;
 }
 .onlineShop {
-  background: url("../img/onlineShop-bg.jpg") center center no-repeat;
+  background: url("../img/bg-img.jpg") center center no-repeat;
   background-size: cover;
   padding: 6rem 0;
   position: relative;
+  background-position: 0 85%;
 }
 .onlineShop::after {
   content: "";
@@ -317,12 +323,38 @@ main{
 }
 #heading-img{
   height: 400px;
-  background-color: chocolate;
+  margin: 52px 0 0;
   /* background-image: url() */
   line-height: 400px;
   text-align: center;
   color:white;
 }
+.heading-img__cover{
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+#heading-img.styles{
+  background-image: url('../img/styles.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+#heading-img.price{
+  background-image: url('../img/price.jpg');
+  background-position: 50% 60%;
+  background-size: cover;
+}
+#heading-img.access{
+  background-image: url('../img/access.jpg');
+  background-position: 50% 60%;
+  background-size: cover;
+}
+#heading-img.contact{
+  background-image: url('../img/contact.jpg');
+  background-position: 50% 60%;
+  background-size: cover;
+  padding: 0;
+}
+
 .content__wrap{
   width: 980px;
   margin: 100px 0;
@@ -379,6 +411,19 @@ main{
 .staff__styles__heading__description{
   width: 75%;
   margin-left: 17px;
+}
+.staff__styles__heading__description__profiles li{
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+}
+.profiles__th{
+  width:25%;
+}
+.profiles__td{
+  width:75%;
 }
 
 .staff__styles__img__list{
@@ -546,4 +591,3 @@ div#contact {
   background-color: #ff4400;
   color: #FFFFFF;
 }
-
