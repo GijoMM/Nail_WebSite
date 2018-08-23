@@ -236,16 +236,26 @@ h3, h4, h5 {
     width: 30%;
   }
 }
-.staff-profile__img {
+.staff-profile__img__wrap {
   max-width: 240px;
   width: 100%;
+  max-height: 240px;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
+  border:5px solid #ccc
 }
+.staff-profile__img{
+  width: 100%;
+  border-radius: 50%;
+
+}
+
 .staff-comment__name {
   font-family: 'Merienda', cursive;
   text-align: center;
+  margin:2rem 0 1rem;
+  font-size: 1.75rem;
 }
 .menu {
   background: url("../img/menu-bg.jpg") center center no-repeat;
@@ -257,6 +267,11 @@ h3, h4, h5 {
   margin: 6rem auto;
   text-align: center;
 }
+
+.contact__content p{
+  margin: 1rem 0;
+}
+
 .contact__reservation {
   border-bottom: 1px solid #ddd;
   padding-bottom: 5rem;
@@ -371,6 +386,8 @@ main{
 	margin-right:5rem;
 	width:230px;
 	height:230px;
+  border-radius:50%;
+  border:5px solid #ccc;
 }
 .staff__img{
   width: 100%;
@@ -421,6 +438,7 @@ main{
 }
 .profiles__th{
   width:25%;
+  font-weight: bold;
 }
 .profiles__td{
   width:75%;
@@ -486,6 +504,9 @@ main{
   .staff__styles__heading__description{
     width: 100%;
     margin: 0;
+  }
+  .profiles__th{
+    width:35%;
   }
   .staff__styles__img__list{
     flex-wrap: wrap;
