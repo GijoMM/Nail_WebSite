@@ -395,19 +395,6 @@ main{
   width: 90%;
   margin-left: 10%;
 }
-.reservation{
-  text-align: center;
-  margin:2rem;
-}
-.reservation__btn{
-  display: block;
-  width: 220px;
-  margin: 1rem auto 5rem;
-  padding: 1.2rem 0;
-  background: #aaa;
-  color:#fff;
-  border-radius: 20px;
-}
 @media only screen and (max-width:768px){
   main{
     width:100%;
@@ -533,3 +520,30 @@ div#contact {
 #contact label#message {
   font-size: 30px;
 }
+
+/* Reservation Section */
+.reservation{
+  text-align: center;
+  margin:2rem;
+}
+.reservation__title {
+  font-size: 40px;
+}
+.reservation__btn{
+  display: block;
+  width: 220px;
+  margin: 1rem auto 5rem;
+  padding: 1.2rem 0;
+  background-color: #d04c1c;
+  color: #fefefe;
+  box-shadow: 0px 1px 1px #808080c4;
+  letter-spacing: 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.reservation__btn:hover {
+  background-color: #ff4400;
+  color: #FFFFFF;
+}
+
