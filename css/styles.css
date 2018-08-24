@@ -144,6 +144,30 @@ h3, h4, h5 {
   text-align: center;
   color: #fefefe;
 }
+@media screen and (max-width:768px) {
+  .header{
+    padding: 10px 14px;
+  }
+  .header__logo{
+    height: 35px;
+    vertical-align: bottom;
+  }
+  .globalNav li{
+    margin-left: .6rem;
+  }
+  .footer__logo{
+    width:100px;
+  }
+  .footerNav li{
+    display: block;
+  }
+  .footerLink{
+    margin-top: auto;
+  }
+  .copyright{
+    margin: 3rem .5rem 1rem;
+  }
+}
 
 .hero {
   background: url("../img/hero-bg.jpg") center center no-repeat;
@@ -240,6 +264,9 @@ h3, h4, h5 {
   .staff-profile {
     width: 30%;
   }
+  .staff-comment__name{
+    margin:2rem 0 1rem;
+  }
 }
 .staff-profile__img__wrap {
   max-width: 240px;
@@ -259,7 +286,7 @@ h3, h4, h5 {
 .staff-comment__name {
   font-family: 'Merienda', cursive;
   text-align: center;
-  margin:2rem 0 1rem;
+  margin:2rem 0 5rem;
   font-size: 1.75rem;
 }
 .menu {
@@ -306,6 +333,7 @@ h3, h4, h5 {
 }
 .information__sns {
   padding: 0;
+  margin:1rem 0;
 }
 .information__sns li {
   display: inline-block;
@@ -491,7 +519,7 @@ main{
   .staff__img__wrap{
     width:230px;
     height:230px;
-    margin:2rem 0 4rem;
+    margin:2rem 0 3rem;
     align-items:center;
   }
   .staff__styles__wrap{
@@ -540,59 +568,115 @@ main{
   }
 }
 
+/* Price */
+.price-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.price-table td.text {
+  border: 5px solid white;
+  text-align: center;
+  padding: 15px;
+  background-color: #dddddd;
+  width: 30%;
+}
+
+.price-table td {
+  border: 5px solid white;
+  text-align: center;
+  padding: 15px;
+  background-color: #f1f1f1;
+  width: 70%
+}
+
+.price-table th {
+  text-align: left;
+  padding-top: 50px;
+}
+
+.h2pricepage {
+  font-family: 'Merienda', cursive;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+@media only screen and (max-width:768px){
+  .h2pricepage{
+    text-align: center;
+  }
+}
+
+/* Access */
+.googlemap-wrap {
+  margin: 30px auto;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+}
+
+.googlemap-wrap iframe {
+  width: 100%;
+  height: 450px;
+}
+
+.access-table {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 90%;
+  border-collapse: collapse;
+  /* border: 1px solid black; */
+}
+
+.access-table th, .access-table td{
+  padding: 1rem;
+  border-bottom:1px solid #aaa;
+}
+
+.access-table td {
+  font-size: 15px;
+  margin: 20px;
+}
+
+.td-small {
+  padding-left: 25px;
+}
+
 /* Contact */
-div#contact {
-  font-size: 60px;
+#contact {
+  /* font-size: 60px; */
   width:980px;
   margin:0 auto;
+  text-align: center;
 }
 
-#contact .name {
+#contact .name, #contact .email, #contact .title, #contact .message {
   padding: 0px 0rem;
   font-size: 15px;
-  margin: 0 0 30px 82px;
+  margin: 0 0 30px;
   width: 600px;
-  height: 30px;
 }
 
-#contact .email {
-  padding: 0px 0rem;
-  font-size: 15px;
-  margin: 0 0 30px 90px;
-  width: 600px;
-  height: 30px;
+#contact .name, #contact .email, #contact .title{
+    height: 40px;
 }
 
-#contact .title {
-  padding: 0px 0rem;
-  font-size: 15px;
-  margin: 0 0 60px 108px;
-  width: 600px;
-  height: 30px;
+#contact .message{
+  min-height: 160px;
 }
 
-#contact .message {
-  padding: 0px 0rem;
-  font-size: 15px;
-  margin: 0 0 30px 38px;
-  width: 600px;
-  height: 100px;
+.form__th{
+  width: 10%;
+  display: inline-block;
 }
 
-#contact label#name {
-  font-size: 30px;
+#contact label#name, #contact label#email, #contact label#title, #contact label#message{
+  font-size: 20px;
 }
 
-#contact label#email {
-  font-size: 30px;
-}
-
-#contact label#title {
-  font-size: 30px;
-}
-
-#contact label#message {
-  font-size: 30px;
+#contact input{
+  border:1px solid #aaa;
 }
 
 #contact .submit {
@@ -617,11 +701,16 @@ div#contact {
   color: #FFFFFF;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  form{
+    width:90%;
+    margin: auto;
+  }
   #contact {
-    font-size: 60px;
+    /* font-size: 60px; */
     width: 100%;
     margin: 0 auto;
+    text-align: left;
   }
 
   #contact .name {
@@ -650,6 +739,9 @@ div#contact {
     margin: 0;
     width: 100%;
     height: 100px;
+  }
+  #contact .submit{
+    margin: 2rem 0;
   }
 }
 
