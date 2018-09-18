@@ -8,6 +8,10 @@
   <link rel="shortcut icon" href="img/skylogo-icon.png" type="image/x-icon" />
   <title>Nail Salon SKY</title>
   <style>
+    /* hidden checkbox */
+    input[type="checkbox"]{
+      display: none;
+    }
     @media screen and (max-width:768px){
       header{
         position: relative;
@@ -19,10 +23,6 @@
       .globalNav li{
         margin-left: 0;
       }
-      /* hidden checkbox */
-      .globalNav input[type="checkbox"]{
-        display: none;
-      }
       label{
         width:100%;
         top:0;
@@ -33,20 +33,18 @@
       /* menu is hidden until it has been clicked */
       .nav-menu-menu{
         display: none;
+        width:100vw;
+        height:95vh;
+        padding: 30px 18px;
+        background: #fff;
+        transition: width .5s ease-in-out;
       }
       /* it opens when checkbox has been clicked */
       input:checked ~ .nav-menu-menu{
         display: block;
         position: absolute;
-        background: #ccc;
-        top:0;
+        top:55px;
         left:0;
-      }
-      .nav-menu-menu{
-        background: #ccc;
-        width: 100vw;
-        height:100vh;
-        padding: 70px 18px;
         z-index:2;
       }
       .nav-menu-menu > li{
@@ -72,14 +70,76 @@
         background: #004c84;
         border-radius:3px;
       }
+      /* set animation of nav opens*/
       .menu-bar span:nth-child(1){
         top:0;
+        animation: switch-top .75s forwards;
+        -webkit-animation:switch-top .75s forwards;
       }
       .menu-bar span:nth-child(2){
         top:10px;
+        transition:all .25s .25s;
+        opacity:1;
       }
       .menu-bar span:nth-child(3){
         top:20px;
+        animation: switch-btm .75s forwards;
+        -webkit-animation: switch-btm .75s forwards;
+      }
+      @keyframes switch-top{
+        0%{transform:translateY(20px)rotate(45deg);}
+        50%{transform:translateY(20px)rotate(0);}
+        100%{transform:translateY(0)rotate(0);}
+      }
+      @-webkit-keyframes switch-top{
+        0%{-webkit-transform:translateY(20px)rotate(45deg);}
+        50%{-webkit-transform:translateY(20px)rotate(0);}
+        100%{-webkit-transform:translateY(0)rotate(0);}
+      }
+      @keyframes switch-btm {
+        0%{transform:translateY(-20px)rotate(-45deg);}
+        50%{transform:translateY(-20px)rotate(0);}
+        100%{transform:translateY(0)rotate(0);}
+      }
+      @-webkit-keyframes switch-btm {
+        0%{-webkit-transform:translateY(-20px)rotate(-45deg);}
+        50%{-webkit-transform:translateY(-20px)rotate(0);}
+        100%{-webkit-transform:translateY(0)rotate(0);}
+      }
+
+      /* set animation of nav closes */
+      input:checked ~ .menu-bar span:nth-child(1){
+        top:-10px;
+        animation:switch-top-active .75s forwards;
+        -webkit-animtion:switch-top-active .75s forwards;
+      }
+      input:checked ~ .menu-bar span:nth-child(2){
+        opacity:0;
+      }
+      input:checked ~ .menu-bar span:nth-child(3){
+        top:30px;
+        animation:switch-btm-active .75s forwards;
+        -webkit-animtion:switch-btm-active .75s forwards;
+      }
+      @keyframes switch-top-active{
+        0%{transform:translateY(0)rotate(0);}
+        50%{transform:translateY(20px)rotate(0);}
+        100%{transform:translateY(20px)rotate(45deg);}
+      }
+      @-webkit-keyframes switch-top-active{
+        0%{-webkit-transform:translateY(0)rotate(0);}
+        50%{-webkit-transform:translateY(20px)rotate(0);}
+        100%{-webkit-transform:translateY(20px)rotate(45deg);}
+      }
+      @keyframes switch-btm-active{
+        0%{transform:translateY(0)rotate(0);}
+        50%{transform:translateY(-20px)rotate(0);}
+        100%{transform:translateY(-20px)rotate(-45deg);}
+      }
+      @-webkit-keyframes switch-btm-active{
+        0%{-webkit-transform:translateY(0)rotate(0);}
+        50%{-webkit-transform:translateY(-20px)rotate(0);}
+        100%{-webkit-transform:translateY(-20px)rotate(-45deg);}
       }
     }
   </style>
