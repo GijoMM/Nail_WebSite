@@ -105,6 +105,143 @@ h3, h4, h5 {
 .globalNav li a:hover {
   color: #004c84;
 }
+/* hide checkbox of the hamburger menu*/
+input[type="checkbox"]{
+  display: none;
+}
+/* for hamburger menu */
+@media screen and (max-width:768px){
+  header{
+    position: relative;
+  }
+  .globalNav{
+    width:100%;
+    text-align: right;
+  }
+  .globalNav li{
+    margin-left: 0;
+  }
+  label{
+    width:100%;
+    top:0;
+    right:0;
+    height:30px;
+    cursor:pointer;
+  }
+  /* menu is hidden until it has been clicked */
+  .nav-menu-menu{
+    position: absolute;
+    top:55px;
+    left:0;
+    width:100vw;
+    height:95vh;
+    padding: 30px 18px;
+    background: #fff;
+    /* set animation on background */
+    transform-origin:0% 0%;
+    transform:translate(100%, 0);
+    transition: transform .5s ease-in-out;
+    z-index:2;
+  }
+  /* it opens when checkbox has been clicked */
+  input:checked ~ .nav-menu-menu{
+    transform:none;
+  }
+  .nav-menu-menu > li{
+    width:100%;
+    height:40px;
+    text-align: left;
+  }
+  .menu-bar{
+    display: inline-block;
+    margin-right: auto;
+    width:28px;
+    height:25px;
+    vertical-align: middle;
+    z-index: 3;
+    position: relative;
+  }
+  .menu-bar span{
+    position: absolute;
+    left:0;
+    width:100%;
+    height:3px;
+    /* margin:5px; */
+    background: #004c84;
+    border-radius:3px;
+  }
+  /* set animation of nav opens*/
+  .menu-bar span:nth-of-type(1){
+    top:0;
+    animation: switch-top .75s backwards;
+    -webkit-animation:switch-top .75s backwards;
+  }
+  .menu-bar span:nth-of-type(2){
+    top:10px;
+    transition:all .25s .25s;
+    opacity:1;
+  }
+  .menu-bar span:nth-of-type(3){
+    top:20px;
+    animation: switch-btm .75s backwards;
+    -webkit-animation: switch-btm .75s backwards;
+  }
+  @keyframes switch-top{
+    0%{transform:translateY(20px)rotate(45deg);}
+    50%{transform:translateY(20px)rotate(0);}
+    100%{transform:translateY(0)rotate(0);}
+  }
+  @-webkit-keyframes switch-top{
+    0%{-webkit-transform:translateY(20px)rotate(45deg);}
+    50%{-webkit-transform:translateY(20px)rotate(0);}
+    100%{-webkit-transform:translateY(0)rotate(0);}
+  }
+  @keyframes switch-btm {
+    0%{transform:translateY(-20px)rotate(-45deg);}
+    50%{transform:translateY(-20px)rotate(0);}
+    100%{transform:translateY(0)rotate(0);}
+  }
+  @-webkit-keyframes switch-btm {
+    0%{-webkit-transform:translateY(-20px)rotate(-45deg);}
+    50%{-webkit-transform:translateY(-20px)rotate(0);}
+    100%{-webkit-transform:translateY(0)rotate(0);}
+  }
+
+  /* set animation of nav closes */
+  input:checked ~ .menu-bar span:nth-of-type(1){
+    top:-10px;
+    animation:switch-top-active .75s forwards;
+    -webkit-animtion:switch-top-active .75s forwards;
+  }
+  input:checked ~ .menu-bar span:nth-of-type(2){
+    opacity:0;
+  }
+  input:checked ~ .menu-bar span:nth-of-type(3){
+    top:30px;
+    animation:switch-btm-active .75s forwards;
+    -webkit-animtion:switch-btm-active .75s forwards;
+  }
+  @keyframes switch-top-active{
+    0%{transform:translateY(0)rotate(0);}
+    50%{transform:translateY(20px)rotate(0);}
+    100%{transform:translateY(20px)rotate(45deg);}
+  }
+  @-webkit-keyframes switch-top-active{
+    0%{-webkit-transform:translateY(0)rotate(0);}
+    50%{-webkit-transform:translateY(20px)rotate(0);}
+    100%{-webkit-transform:translateY(20px)rotate(45deg);}
+  }
+  @keyframes switch-btm-active{
+    0%{transform:translateY(0)rotate(0);}
+    50%{transform:translateY(-20px)rotate(0);}
+    100%{transform:translateY(-20px)rotate(-45deg);}
+  }
+  @-webkit-keyframes switch-btm-active{
+    0%{-webkit-transform:translateY(0)rotate(0);}
+    50%{-webkit-transform:translateY(-20px)rotate(0);}
+    100%{-webkit-transform:translateY(-20px)rotate(-45deg);}
+  }
+}
 .footer {
   background-color: #00bcca;
   padding: 4rem 20px 1rem;
