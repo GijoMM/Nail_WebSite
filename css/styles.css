@@ -307,6 +307,7 @@ input[type="checkbox"]{
 .hero {
   background: url("../img/hero-bg.jpg") center center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .hero__content {
   margin-top: 52px;
@@ -357,6 +358,7 @@ input[type="checkbox"]{
   background-size: cover;
   padding: 6rem 0;
   position: relative;
+  background-attachment: fixed;
 }
 .concept::after {
   content: "";
@@ -428,6 +430,7 @@ input[type="checkbox"]{
   background: url("../img/menu-bg.jpg") center center no-repeat;
   background-size: cover;
   padding: 6rem 0;
+  background-attachment: fixed;
 }
 .menu__content {
   width: 50vw;
@@ -480,6 +483,7 @@ input[type="checkbox"]{
   padding: 6rem 0;
   position: relative;
   background-position: 0 85%;
+  background-attachment: fixed;
 }
 .onlineShop::after {
   content: "";
