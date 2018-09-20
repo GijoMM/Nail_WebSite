@@ -558,7 +558,23 @@ main{
   width: 980px;
   margin: 100px 0;
 }
-.content{
+
+.access-information {
+  width: 100%;
+  margin: 150px 0;
+  display: flex;
+}
+
+.content__wrap2 {
+  display: flex;
+  align-items: center;
+  margin-top: -5%;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.content {
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -648,6 +664,11 @@ main{
   }
   .content__wrap{
     width:100%;
+  }
+  .access-information {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
   }
   .content{
     -webkit-display: flex;
@@ -796,12 +817,11 @@ div.price_circle img:hover{
 .googlemap-wrap {
   margin: 30px auto;
   text-align: center;
-  max-width: 600px;
-  width: 90%;
+  width: 100%;
 }
 
 .googlemap-wrap iframe {
-  width: 100%;
+  width: 50%;
   height: 450px;
 }
 
@@ -810,7 +830,74 @@ div.price_circle img:hover{
   max-width: 600px;
   width: 90%;
   border-collapse: collapse;
-  /* border: 1px solid black; */
+  margin: 25px;
+}
+
+.album {
+  background-color: white;
+  position: relative;
+  width: 300px;
+  height: 225px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.album img {
+  animation-name: album;
+  -webkit-animation-name: album;
+  animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0;
+
+}
+
+.album .img1 {
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.album .img2 {
+  animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+  position: absolute;
+  top: 0;
+}
+
+@keyframes album {
+  0% {
+    opacity: 0;
+  }
+
+  12.5% {
+    opacity: 1;
+  }
+
+  37.5% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes album {
+  0% {
+    opacity: 0;
+  }
+
+  12.5% {
+    opacity: 1;
+  }
+
+  37.5% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .access-table th, .access-table td{
