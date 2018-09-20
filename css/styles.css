@@ -749,17 +749,18 @@ div.price_circle {
 div.price_circle img{
   border-radius: 50%;
   height: 260px;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: scale(1.12);
-  transform: scale(1.12);
+  opacity: 0.5;
+  -webkit-transform: scale(1);
+  transform: scale(1);
  }
 
 div.price_circle img:hover{
   height: 260px;
-  opacity: 0.5;
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1.12);
+  transform: scale(1.12);
  }
 
 .column p{
