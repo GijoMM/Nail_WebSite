@@ -434,7 +434,9 @@ input[type="checkbox"]{
 }
 .menu__content {
   width: 50vw;
-  margin: 6rem auto;
+  width: 50vw;
+  margin: 0px auto;
+  margin-bottom: 25px;
   text-align: center;
 }
 
