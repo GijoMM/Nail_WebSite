@@ -442,7 +442,9 @@ input[type="checkbox"]{
 }
 .menu__content {
   width: 50vw;
-  margin: 6rem auto;
+  width: 50vw;
+  margin: 0px auto;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -770,23 +772,24 @@ div.price_circle {
   margin: auto;
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #00008bba;
+  background-color: #746f6d;
 }
 
 div.price_circle img{
   border-radius: 50%;
   height: 260px;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: scale(1.12);
-  transform: scale(1.12);
+  opacity: 0.5;
+  -webkit-transform: scale(1);
+  transform: scale(1);
  }
 
 div.price_circle img:hover{
   height: 260px;
-  opacity: 0.5;
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1.12);
+  transform: scale(1.12);
  }
 
 .column p{
