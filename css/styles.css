@@ -809,35 +809,41 @@ main{
 }
 
 /* -------------access.html------------- */
-.googlemap-wrap {
+.access__information{
+  -webkit-display:flex;
+  display:flex;
+  align-items: flex-end;
+  margin:0 0 3.5rem;
+}
+.googlemap__wrap {
   margin: 30px auto;
-  text-align: center;
+  /* text-align: center; */
   width: 100%;
 }
 
-.googlemap-wrap iframe {
-  width: 50%;
+.googlemap__wrap iframe {
+  width: 100%;
   height: 450px;
 }
 
-.access-table {
-  margin: 0 auto;
-  max-width: 600px;
-  width: 90%;
+.access__table {
+  max-width: 655px;
+  width: 100%;
   border-collapse: collapse;
-  margin: 25px;
+  margin: 25px 0 25px 25px;
 }
 
-.album {
+.access__slideshow {
   background-color: white;
   position: relative;
   width: 300px;
   height: 225px;
+  margin: 25px 0;
   overflow: hidden;
   background-color: white;
 }
 
-.album img {
+.access__slideshow img {
   animation-name: album;
   -webkit-animation-name: album;
   animation-duration: 10s;
@@ -848,13 +854,12 @@ main{
 
 }
 
-.album .img1 {
+.access__slideshow_img1 {
   margin: 0 auto;
   width: 100%;
-
 }
 
-.album .img2 {
+.access__slideshow_img2 {
   animation-delay: 5s;
   -webkit-animation-delay: 5s;
   position: absolute;
@@ -895,20 +900,49 @@ main{
   }
 }
 
-.access-table th, .access-table td{
+.access__table th, .access__table td{
   padding: 1rem;
   border-bottom:1px solid #aaa;
 }
 
-.access-table td {
+.access__table td {
   font-size: 15px;
   margin: 20px;
 }
 
-.td-small {
+.access__table_subject {
   padding-left: 25px;
 }
-
+.content__wrap2.access {
+  margin:1.35rem 0;
+}
+.salon-info__title{
+  font-size:2rem;
+}
+.salon-info__description{
+  font-size:15px;
+}
+@media only screen and (max-width:768px){
+  .access__information{
+    flex-direction: column;
+    align-items: center;
+  }
+  .access__table{
+    max-width: fit-content;
+    width:100%;
+    margin:0 20px;
+  }
+  .access__slideshow{
+    width:90%;
+    margin:0 0 25px;
+  }
+  .googlemap__wrap{
+    padding: 20px;
+  }
+  .googlemap__wrap iframe{
+    height:420px;
+  }
+}
 /* -------------contact.html------------- */
 #contact {
   max-width: 540px;
