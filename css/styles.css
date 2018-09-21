@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Amaranth:400,700');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700');
 
+/* -------------common element------------- */
 ::selection {
   background-color: rgba(0, 76, 132, .3);
 }
@@ -75,6 +76,9 @@ h3, h4, h5 {
   padding: 0 20px;
   margin: 0 auto;
 }
+
+
+/* -------------header------------- */
 .header {
   width: 100%;
   padding: 10px 20px;
@@ -95,14 +99,16 @@ h3, h4, h5 {
   width: auto;
   height: 32px;
 }
-.globalNav li {
+
+/* -------------global-nav------------- */
+.globalNav__menu {
   display: inline-block;
   margin-left: 2em;
 }
-.globalNav li a {
+.globalNav__menu a {
   color: #343434;
 }
-.globalNav li a:hover {
+.globalNav__menu a:hover {
   color: #004c84;
 }
 /* hide checkbox of the hamburger menu*/
@@ -118,12 +124,12 @@ input[type="checkbox"]{
     width:100%;
     text-align: right;
   }
-  .globalNav li{
+  .globalNav__menu{
     display: block;
     margin-left: 0;
     text-align: left;
   }
-  .globalNav li a{
+  .globalNav__menu a{
     display: block;
     width:100%;
     padding: 15px 0;
@@ -137,7 +143,7 @@ input[type="checkbox"]{
     cursor:pointer;
   }
   /* menu is hidden until it has been clicked */
-  .nav-menu-menu{
+  .globalNav__content{
     position: absolute;
     top:50px;
     left:0;
@@ -152,15 +158,15 @@ input[type="checkbox"]{
     z-index:2;
   }
   /* it opens when checkbox has been clicked */
-  input:checked ~ .nav-menu-menu{
+  input:checked ~ .globalNav__content{
     transform:none;
   }
-  .nav-menu-menu > li{
+  .globalNav__menu{
     width:100%;
     height:40px;
     text-align: left;
   }
-  .menu-bar{
+  .globalNav__menu-bar{
     display: inline-block;
     margin-right: auto;
     width:28px;
@@ -169,27 +175,26 @@ input[type="checkbox"]{
     z-index: 3;
     position: relative;
   }
-  .menu-bar span{
+  .globalNav__menu-bar span{
     position: absolute;
     left:0;
     width:100%;
     height:3px;
-    /* margin:5px; */
     background: #004c84;
     border-radius:3px;
   }
   /* set animation of nav opens*/
-  .menu-bar span:nth-of-type(1){
+  .globalNav__menu-bar span:nth-of-type(1){
     top:0;
     animation: switch-top .75s backwards;
     -webkit-animation:switch-top .75s backwards;
   }
-  .menu-bar span:nth-of-type(2){
+  .globalNav__menu-bar span:nth-of-type(2){
     top:10px;
     transition:all .25s .25s;
     opacity:1;
   }
-  .menu-bar span:nth-of-type(3){
+  .globalNav__menu-bar span:nth-of-type(3){
     bottom: 0;
     animation: switch-btm .75s backwards;
     -webkit-animation: switch-btm .75s backwards;
@@ -216,14 +221,14 @@ input[type="checkbox"]{
   }
 
   /* set animation of nav closes */
-  input:checked ~ .menu-bar span:nth-of-type(1){
+  input:checked ~ .globalNav__menu-bar span:nth-of-type(1){
     animation:switch-top-active .75s forwards;
     -webkit-animtion:switch-top-active .75s forwards;
   }
-  input:checked ~ .menu-bar span:nth-of-type(2){
+  input:checked ~ .globalNav__menu-bar span:nth-of-type(2){
     opacity:0;
   }
-  input:checked ~ .menu-bar span:nth-of-type(3){
+  input:checked ~ .globalNav__menu-bar span:nth-of-type(3){
     animation:switch-btm-active .75s forwards;
     -webkit-animtion:switch-btm-active .75s forwards;
   }
@@ -248,6 +253,7 @@ input[type="checkbox"]{
     100%{-webkit-transform:translateY(-10px) rotate(-45deg);}
   }
 }
+/* -------------footer------------- */
 .footer {
   background-color: #00bcca;
   padding: 4rem 20px 1rem;
@@ -258,24 +264,24 @@ input[type="checkbox"]{
   align-items: center;
   margin-top: 17px;
 }
-.footerNav li {
+.footerNav__menu {
   display: inline-block;
   margin-right: 1em;
 }
-.footerNav li a {
+.footerNav__menu-link {
   color: #fefefe;
 }
-.footerNav li a:hover {
+.footerNav__menu-link:hover {
   color: #004c85;
 }
-.footerLink li {
+.footerLink__social {
   display: inline-block;
   margin-left: 1em;
 }
-.footerLink a {
+.footerLink__social-link {
   color: #343434;
 }
-.footerLink a:hover {
+.footerLink__social-link:hover {
   color: #004c85;
 }
 .footer__logo {
@@ -295,13 +301,10 @@ input[type="checkbox"]{
     height: 35px;
     vertical-align: bottom;
   }
-  .globalNav li{
-    margin-left: .6rem;
-  }
   .footer__logo{
     width:100px;
   }
-  .footerNav li{
+  .footerNav__menu {
     display: block;
   }
   .footerLink{
@@ -311,7 +314,7 @@ input[type="checkbox"]{
     margin: 3rem .5rem 1rem;
   }
 }
-
+/* -------------index.html------------- */
 .hero {
   background: url("../img/hero-bg.jpg") center center no-repeat;
   background-size: cover;
@@ -335,29 +338,29 @@ input[type="checkbox"]{
   width: 45vw;
   height: auto;
 }
-.imageList-items {
+.imageList__wrap {
   padding: 2rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-.imageList-item {
+.imageList__item {
   width: 25%;
   height: auto;
   padding: 0 10px;
 }
 @media screen and (max-width: 414px){
-  .imageList-item {
+  .imageList__item {
     width: 50%;
     margin-bottom: 20px;
   }
 }
-.imageList-item img {
+.imageList__item-img {
   display: block;
 }
 @media screen and (min-width: 768px){
-  .imageList-items {
+  .imageList__wrap {
     padding: 6rem;
   }
 }
@@ -442,7 +445,6 @@ input[type="checkbox"]{
 }
 .menu__content {
   width: 50vw;
-  width: 50vw;
   margin: 0px auto;
   margin-bottom: 25px;
   text-align: center;
@@ -513,10 +515,10 @@ input[type="checkbox"]{
   z-index: 2;
 }
 
-/* Styles */
+/* -------------styles.html------------- */
 .staff__name{
-	margin:20px 0 0;
-	font-size:2.5rem;
+  margin:20px 0 0;
+  font-size:2.5rem;
 }
 main{
   margin: auto;
@@ -582,12 +584,12 @@ main{
   -ms-display: flex;
   -o-display: flex;
   display: flex;
-	align-items:center;
+  align-items:center;
 }
 .staff__img__wrap{
-	margin-right:5rem;
-	width:230px;
-	height:230px;
+  margin-right:5rem;
+  width:230px;
+  height:230px;
   border-radius:50%;
   border:5px solid #ccc;
 }
@@ -740,10 +742,8 @@ main{
 .g{
   border-radius: 
 }
-/* Price */
 
-
-
+/* -------------price.html------------- */
 .h2_price_page {
   font-family: 'Merienda', cursive;
   text-align: center;
@@ -816,7 +816,7 @@ div.price_circle img:hover{
   }
 }
 
-/* Access */
+/* -------------access.html------------- */
 .googlemap-wrap {
   margin: 30px auto;
   text-align: center;
@@ -917,7 +917,7 @@ div.price_circle img:hover{
   padding-left: 25px;
 }
 
-/* Contact */
+/* -------------contact.html------------- */
 #contact {
   max-width: 540px;
   margin:0 auto;
