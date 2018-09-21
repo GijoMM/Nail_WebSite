@@ -431,10 +431,15 @@ input[type="checkbox"]{
   border:5px solid #ccc;
 }
 
+.staff-profile__name_wrap{
+  margin:2rem 5rem 6rem;
+  text-align: center;
+}
+
 .staff-profile__name {
   font-family: 'Merienda', cursive;
   text-align: center;
-  margin:2rem 0 5rem;
+  /* margin:2rem 0 5rem; */
   font-size: 1.75rem;
 }
 .price {
@@ -444,7 +449,7 @@ input[type="checkbox"]{
   background-attachment: fixed;
 }
 .price__content {
-  width: 50vw;
+  width: 75vw;
   margin: 0px auto;
   margin-bottom: 25px;
   text-align: center;
@@ -467,6 +472,9 @@ input[type="checkbox"]{
   text-align: center;
 }
 @media screen and (min-width: 768px){
+  .price__content{
+    width:50vw;
+  }
   .contact__content {
     display: flex;
     justify-content: space-between;
@@ -541,6 +549,7 @@ main{
 }
 .heading-img__cover{
   background-color: rgba(0, 0, 0, 0.35);
+  font-size:40px;
 }
 
 #heading-img.styles{
@@ -783,13 +792,15 @@ main{
 
 .price__menu-price{
   font-family: 'Merienda', cursive;
-  font-size:25px;
+  /* font-family: 'Amaranth', sans-serif; */
+  font-size:27px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   text-shadow: 1px 1px 1px #8080805e;
+  white-space: normal;
  }
 
 @media only screen and (max-width:768px){
@@ -917,10 +928,13 @@ main{
   margin:1.35rem 0;
 }
 .salon-info__title{
-  font-size:2rem;
+  font-family: 'Amaranth', sans-serif;
+  font-size:2.5rem;
 }
 .salon-info__description{
   font-size:15px;
+  text-align: left;
+  padding: 5px 20px 0;
 }
 @media only screen and (max-width:768px){
   .access__information{
@@ -1031,7 +1045,7 @@ main{
   margin:2rem;
 }
 .reservation__title {
-  font-size: 40px;
+  font-size: 35px;
 }
 .reservation__btn{
   display: block;
