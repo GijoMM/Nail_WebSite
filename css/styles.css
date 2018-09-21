@@ -942,8 +942,8 @@ main{
     align-items: center;
   }
   .access__table{
-    max-width: fit-content;
-    width:100%;
+    /* max-width: fit-content; */
+    width:92%;
     margin:0 20px;
   }
   .access__slideshow{
